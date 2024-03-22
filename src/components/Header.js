@@ -24,18 +24,16 @@ const Header = ({ setIsClicked, setValue, setShowAnimation }) => {
         <form onSubmit={handleClick}>
           <input
             type="text"
-            className="px-3 py-2 bg-transparent border-[1px] text-white placeholder:text-stone-300 w-[16rem] lg:w-[25rem] outline-none "
+            className="px-3 py-2 bg-slate-800 border-[2px] shadow-2xl border-stone-800  text-white placeholder:text-stone-300 w-[16rem] lg:w-[25rem] outline-none "
             placeholder="Enter your name to see the magic"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
-          <button className="bg-orange-500 px-3 border-[1px] border-orange-500 py-2">
-            Create
-          </button>
+          <button className="bg-orange-500 px-3   py-2">Create</button>
         </form>
       </div>
       <div className="text-2xl hidden lg:flex font-bold text-white">
-        Credit to <span className="text-orange-500"> Harsh Mishra</span>
+        <span className="text-orange-500"> Harsh Mishra</span>
       </div>
     </div>
   );

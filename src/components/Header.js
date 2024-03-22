@@ -24,7 +24,7 @@ const Header = ({ setIsClicked, setValue, setShowAnimation }) => {
         <form onSubmit={handleClick}>
           <input
             type="text"
-            className="px-3 py-2 bg-slate-800 border-[2px] shadow-2xl border-stone-800  text-white placeholder:text-stone-300 w-[16rem] lg:w-[25rem] outline-none "
+            className="px-3 py-2 bg-slate-800 border-[2px] shadow-2xl border-slate-800  text-white placeholder:text-stone-300 w-[16rem] lg:w-[25rem] outline-none "
             placeholder="Enter your name to see the magic"
             value={text}
             onChange={(e) => setText(e.target.value)}

@@ -9,6 +9,7 @@ background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("/public/1.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 .bg__gif{
   background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("/public/2.gif");

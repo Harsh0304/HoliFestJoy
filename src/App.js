@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import ShareButton from "./components/ShareButton";
 
 function App() {
+  const [value, setValue] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(false);
+  const shareUrl = "https://google.com";
+  const shareTitle = "Check out this awesome website!";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={!showAnimation ? "bg" : value ? "bg__gif" : "bg"}>
+      <div className="w-[95%] lg:w-[90%] mx-auto ">
+        <Header
+          setValue={setValue}
+          setIsClicked={setIsClicked}
+          setShowAnimation={setShowAnimation}
+        />
+        <Main
+          value={value}
+          isClicked={isClicked}
+          showAnimation={showAnimation}
+        />
+        <ShareButton url={shareUrl} title={shareTitle} />
+      </div>
     </div>
   );
 }

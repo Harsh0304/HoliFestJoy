@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className={!showAnimation ? "bg" : value ? "bg__gif" : "bg"}>
-      <div className="w-[95%] lg:w-[90%] h-[100vh] mx-auto ">
+      <div className="w-[95%] lg:w-[90%] h-[95vh] mx-auto ">
         <Header
           setValue={setValue}
           setIsClicked={setIsClicked}

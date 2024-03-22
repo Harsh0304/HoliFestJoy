@@ -8,7 +8,9 @@ const Main = ({ value, isClicked, showAnimation }) => {
         <h1 className="text-6xl w-[80%] lg:w-[60%] mx-auto">
           {isClicked && value ? (
             <div>
-              Happy Holi, {value}. Let's Paint the{" "}
+              Happy Holi,{" "}
+              <span className="text-orange-500 font-bold">{value}</span>. Let's
+              Paint the{" "}
               <span className="text-orange-500 font-bold">Town Together.</span>
             </div>
           ) : (
